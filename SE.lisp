@@ -1,0 +1,42 @@
+(print "=========================Bienvenido al sistema experto========================")
+(print "Desea comer algo caro o barato, 1.barato 2. caro")
+(setq opcion (read))
+(cond 
+	( (= opcion 1) 
+		(print "Eligio la opcion de comida barata.")
+		(print "¿Desea comida saludable o chatara? 1. saludable, 2. chatara")
+		(setq opcion2 (read)) 
+		(cond
+			((= opcion2 1)
+				(print "Eligio la opcion saludable." ) 
+				(print "¿Desea comer una ensalda o fruta? 1.ensalda, 2.fruta")
+				(setq opcion3 (read) ) 
+				(cond 
+					((= opcion3 1) 
+						(print "Puede comer ensalda a un precio razonable en GoGreen o Bust") ) 
+					((= opcion3 2)
+						(print "Puede comer fruta a un precio razonable en el supermercado o mercado.") ) ) ) 
+			( (= opcion2 2) 
+				(print "Eligio la opcion chatara" ) 
+				(print "¿Desea comer comida rapida o algo fuerte? 1.Comida Rapida 2. Comida Fuerte" )
+				(setq opcion3 (read) )
+				( cond
+					( (= opcion3 1) 
+						(print "Puede comer en Macdonalds o BurgerKing") ) 
+					( (= opcion3 2) 
+						(print "Puede comer en Dennys o Campero") ) ) ) ) )
+				
+	( (= opcion 2)
+		(print "Eligio la opcion de comida cara") 
+		(print "¿Desea comer un plato fuerte o algo postre. 1.Plato fuerte 2. Postres") 
+		(setq opcion2 (read) )
+		(cond
+			( (= opcion2 1) 
+				(print "Eligio la opcion de un plato fuerte.") 
+				(print "Puede comer en La estancia o Los cebollines") ) 
+			( (= opcion2 2)
+				(print "Eligio la opcion de un postre.")
+				(print "Puede comer en IHop o KrispyCreme.") ) ) 
+		)
+
+	)
